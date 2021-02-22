@@ -1,0 +1,79 @@
+$menu_list-disp-width:1010px/1230px*100%;
+$font_color-hover: #c59966;
+
+header {
+    width:100%;
+    position: fixed;
+
+    header:before {
+        content:'';
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        z-index: 2; /*меню открывается под плашкой*/
+    }
+}
+    .header__container {
+        display: flex;
+        flex-grow: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        z-index:50px;
+
+        .header__logo {
+            width: 210px/1230px*100%;
+            box-sizing: border-box;
+        }
+
+        .header__menu {
+            width:$menu_list-disp-width;
+            box-sizing: border-box;
+            
+            .header__burger {
+                display:none;
+            }  
+
+            & span{
+                background-color:#000;
+                position:absolute;
+                width:100%;
+                height:2px;
+                left:0;
+                top:9px;
+                transition: all 0.3s ease 0s;
+            }    
+
+            .menu__body {
+                width: 100%;
+            
+                .menu__list {
+                    width: 100%;
+                    list-style: none;
+                    font-family: 'Open Sans', sans-serif;
+                    font-weight: 700;
+                    font-size: 14px;
+                    padding: 0;
+                    margin: 0;
+                    display:flex;
+                    flex-grow: row;
+                    justify-content: flex-end;
+                    & a {
+                        display:flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding:7px 13px 7px 14px;
+                        color:#fff;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                    }
+                    & a:hover {
+                        padding:6px 12px 6px 13px;
+                        border: 1px solid #fff;
+                        color:$font_color-hover;                        
+                    }
+                }        
+            }
+        }
+    }
