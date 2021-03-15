@@ -176,12 +176,12 @@ header header:before {
   background-color: orange;
 }
 
-.interactive-button__dropdown .dropdown {
+.interactive-button__dropdown_hover .dropdown_hover {
   position: relative;
   display: inline-block;
 }
 
-.interactive-button__dropdown .dropdown .dropbtn {
+.interactive-button__dropdown_hover .dropdown_hover .dropbtn_hover {
   background-color: #4CAF50;
   color: white;
   padding: 16px;
@@ -189,7 +189,7 @@ header header:before {
   border: none;
 }
 
-.interactive-button__dropdown .dropdown .dropdown-content {
+.interactive-button__dropdown_hover .dropdown_hover .dropdown-content_hover {
   display: none;
   position: absolute;
   background-color: #f1f1f1;
@@ -199,22 +199,22 @@ header header:before {
   z-index: 1;
 }
 
-.interactive-button__dropdown .dropdown .dropdown-content a {
+.interactive-button__dropdown_hover .dropdown_hover .dropdown-content_hover a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
 
-.interactive-button__dropdown .dropdown .dropdown-content a:hover {
+.interactive-button__dropdown_hover .dropdown_hover .dropdown-content_hover a:hover {
   background-color: #ddd;
 }
 
-.interactive-button__dropdown .dropdown:hover .dropdown-content {
+.interactive-button__dropdown_hover .dropdown_hover:hover .dropdown-content_hover {
   display: block;
 }
 
-.interactive-button__dropdown .dropdown:hover .dropbtn {
+.interactive-button__dropdown_hover .dropdown_hover:hover .dropbtn_hover {
   background-color: #3e8e41;
 }
 
