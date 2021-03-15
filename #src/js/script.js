@@ -6,4 +6,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
     @@include('tab_header.js')
 
+    @@include('_012button.js')
 });
